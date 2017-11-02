@@ -1,4 +1,9 @@
-﻿  Compiling CUDA source file kernel.cu...
+﻿  
+  F:\Codes\1_HelloWorld\1_HelloWorld>"E:\cuda\bin\nvcc.exe" -ccbin "E:\Visual Studio2015\VC\bin\x86_amd64"  -IE:\cuda\include -IE:\cuda\include     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile      -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS /Zi  /MD " -o x64\Release\kernel.cu.obj "F:\Codes\1_HelloWorld\1_HelloWorld\kernel.cu" -clean 
+CUDACOMPILE : nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+  kernel.cu
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (1_HelloWorld.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Compiling CUDA source file kernel.cu...
   
   F:\Codes\1_HelloWorld\1_HelloWorld>"E:\cuda\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2015 -ccbin "E:\Visual Studio2015\VC\bin\x86_amd64"  -IE:\cuda\include -IE:\cuda\include     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /FS /Zi  /MD " -o x64\Release\kernel.cu.obj "F:\Codes\1_HelloWorld\1_HelloWorld\kernel.cu" 
 e:\cuda\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
@@ -101,8 +106,8 @@ e:\cuda\include\math_functions.h(7956): warning C4819: 该文件包含不能在�
 CUDACOMPILE : nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
   kernel.cu
   LINK : 已指定 /LTCG，但不需要生成代码；从链接命令行中移除 /LTCG 以提高链接器性能
-  1_HelloWorld.vcxproj -> F:\Codes\1_HelloWorld\x64\Release\1_HelloWorld.exe
-  1_HelloWorld.vcxproj -> F:\Codes\1_HelloWorld\x64\Release\1_HelloWorld.pdb (Full PDB)
+  1_HelloWorld.vcxproj -> F:\Codes\1_HelloWorld\x64\Release\1_Thread.exe
+  1_HelloWorld.vcxproj -> F:\Codes\1_HelloWorld\x64\Release\1_Thread.pdb (Full PDB)
   copy "E:\cuda\bin\cudart*.dll" "F:\Codes\1_HelloWorld\x64\Release\"
   E:\cuda\bin\cudart32_80.dll
   E:\cuda\bin\cudart64_80.dll

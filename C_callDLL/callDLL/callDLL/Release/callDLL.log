@@ -1,4 +1,0 @@
-﻿  stdafx.cpp
-  callDLL.cpp
-callDLL.cpp(14): error C2664: “HMODULE LoadLibraryW(LPCWSTR)”: 无法将参数 1 从“const char [12]”转换为“LPCWSTR”
-  callDLL.cpp(14): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换

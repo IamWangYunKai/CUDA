@@ -1,12 +1,12 @@
 #include "stdafx.h"
-#include <windows.h>  
+#include <windows.h>
 using namespace std;
 typedef int(*FUNA)(int *c, const int *a, const int *b, const unsigned int size);
 //定义指向和DLL中相同的函数原型指针
 
 int main() {
 	const char* funName = "addWithCuda";
-	const char* dllName = "cuda.dll";
+	const wchar_t* dllName = L"cuda.dll";
 	const unsigned int size = 5;
 	int a[size] = {1, 2, 3, 4, 5};
 	int b[size] = {10, 20, 30, 40, 50};

@@ -1,0 +1,9 @@
+# Compiled Dynamic libraries
+*.dll
+
+# Executables
+*.exe
+
+build
+
+.vs
